@@ -1,0 +1,20 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.nav-bar a:visited {
+  color: #1d1d1d;
+}
+
+.main-nav-btns {
+  display: flex;
+  flex-direction: row;
+}
+

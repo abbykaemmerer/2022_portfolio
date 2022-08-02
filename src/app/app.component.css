@@ -1,4 +1,8 @@
-/* secondary color: #e3e1ce */
+/* Accent colors
+color: #b8af46;
+color: #e3e1ce;
+color: #de902d;
+color: #516aa6; */
 
 html {
   background: #f5f5ef;
@@ -14,3 +18,4 @@ html {
   'GRAD' 0,
   'opsz' 48
 }
+

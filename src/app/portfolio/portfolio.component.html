@@ -1,1 +1,39 @@
-<p>portfolio works!</p>
+<div>
+  <div>
+    <button (click)="goToProfessional()">Professional</button>
+    <span>-</span>
+    <button (click)="goToPersonal()">Personal</button>
+  </div>
+  <div>
+    <div *ngIf="professionalClicked">
+      Hi I appear if you click professional
+    </div>
+    <div *ngIf="personalClicked" class="personal-container">
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/ocm.jpg" alt="Outdoor Color Magic">
+        </div>
+        <h3>Outdoor Color Magic</h3>
+        <p>A mobile responsive application promoting a fictional landscape architecture company, their services, and how to hire them.</p>
+        <button class="ocm">Check it out</button>
+      </div>
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/4paws.jpg" alt="Four Paws">
+        </div>
+        <h3>4PAWS</h3>
+        <p>An eCommerce web application designed to help pet owners find the best products for their pets. It is a state driven, modular single page application with functional components created using JavaScript ES6, HTML 5, CSS 3, JSON, Node.js, npm, and git.
+        4PAWS was my capstone project built at the end of my coding bootcamp. Since it was my first personal project, it holds a special place in my heart.</p>
+        <button class="paws">Check it out</button>
+      </div>
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/4paws.jpg" alt="Four Paws">
+        </div>
+        <h3>My First Portfolio</h3>
+        <p>See how I've grown! I built this portfolio shortly after I had completed my bootcamp, using a state structure we learned in class.</p>
+        <button class="port">Check it out</button>
+      </div>
+    </div>
+  </div>
+</div>

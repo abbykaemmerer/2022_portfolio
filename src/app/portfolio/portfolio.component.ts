@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
+  public professionalClicked = true;
+  public personalClicked = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goToProfessional(){
+    this.professionalClicked = true;
+    this.personalClicked = false;
+  }
+
+  goToPersonal(){
+    this.personalClicked = true;
+    this.professionalClicked = false;
   }
 
 }

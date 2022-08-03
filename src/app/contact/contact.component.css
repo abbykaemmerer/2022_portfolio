@@ -1,12 +1,6 @@
 .half-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 10px 0px;
-  grid-template-areas:
-    ". .";
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hey-header h1 {
@@ -14,23 +8,18 @@
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". .";
+  display: flex;
 }
 
 .contact-photo{
-  width: 95%;
+  width: 30%;
   display: flex;
   justify-content: center;
 }
 
 .form-div {
   border: 1px solid black;
-  width: 95%;
+  width: 30%;
 }
 
 .name-div {

@@ -10,16 +10,13 @@ color: #516aa6; */
 }
 
 html {
-  background: #f5f5ef;
   border: 1px solid #1d1d1d;
   color: #1d1d1d;
   font-family: 'Work Sans', sans-serif;
-  height: 100vh;
+  overflow: hidden;
 }
 
-/* body {
-  padding: 10px;
-} */
+
 
 .material-symbols-outlined {
   font-variation-settings:

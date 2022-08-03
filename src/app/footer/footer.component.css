@@ -5,6 +5,9 @@ footer {
   justify-content: center;
   align-items: center;
   color: #f5f5ef;
+  padding: 10px;
+  border-top: none !important;
+  border: 1px solid #1d1d1d;
 }
 
 div:first-of-type {

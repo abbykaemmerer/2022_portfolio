@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+.hey-header h1 {
+  text-align: center;
+}
+
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,12 +22,50 @@
     ". .";
 }
 
-.form legend {
-  font-size: 18px;
+.contact-photo{
+  width: 95%;
+  display: flex;
+  justify-content: center;
 }
 
-.form div {
-  margin: 0 0 25px 0;
+.form-div {
+  border: 1px solid black;
+  width: 95%;
+}
+
+.name-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.form .name-div div {
+  width: 48.5%;
+  margin: 0;
+}
+
+.name-div input {
+  width: 95%;
+}
+
+label {
+  font-size: 13px;
+}
+
+.form legend:first-of-type {
+  margin: 20px 0;
+}
+
+.form legend {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bottom-margin {
+  margin-bottom: 35px;
+}
+
+.side-margin {
+  margin-left: 20px;
 }
 
 .form img {
@@ -38,11 +80,14 @@ input, textarea {
   border-radius: 2px;
   width: 95%;
   outline: none;
+  background-color: transparent;
 }
 
 .submit {
   display: flex;
   justify-content: center;
+  width: 95%;
+  margin: 20px 0;
 }
 
 .submit input{

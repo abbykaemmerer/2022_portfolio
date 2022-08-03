@@ -7,21 +7,27 @@
     <div class="contact-photo">
       <img src="../../assets/img/hey.jpg">
     </div>
-    <div>
-      <form action="https://formspree.io/kaemmerer.abby@gmail.com" method="POST">
+    <div class="form-div">
+      <form action="https://formspree.io/kaemmerer.abby@gmail.com" method="POST" class="side-margin">
         <legend>Who are you?</legend>
-        <div>
-          <label>
-            <input type="text" name="firstName"/>
-            <span>First Name</span>
-          </label>
-          <label>
-            <input type="text" name="lastName">
-            <span>Last Name</span>
-          </label>
+        <div class="name-div bottom-margin">
+          <div>
+            <input type="text" id="first-name" name="firstName"/>
+            <label for="first-name">
+              <span>First Name</span>
+            </label>
+          </div>
+          <div>
+            <input type="text" id="last-name" name="lastName">
+            <label for="last-name">
+              <span>Last Name</span>
+            </label>
+          </div>
+
+
         </div>
         <legend>Email</legend>
-        <div>
+        <div class="bottom-margin">
           <input
             type="email"
             name="email"
@@ -29,7 +35,7 @@
           />
         </div>
         <legend>Phone</legend>
-        <div>
+        <div class="bottom-margin">
           <input type="tel" name="phone"/>
         </div>
         <legend>Message</legend>

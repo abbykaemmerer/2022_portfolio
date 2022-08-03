@@ -3,6 +3,11 @@ color: #b8af46;
 color: #e3e1ce;
 color: #de902d;
 color: #516aa6; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   background: #f5f5ef;
@@ -10,6 +15,10 @@ html {
   color: #1d1d1d;
   font-family: 'Work Sans', sans-serif;
 }
+
+/* body {
+  padding: 10px;
+} */
 
 .material-symbols-outlined {
   font-variation-settings:

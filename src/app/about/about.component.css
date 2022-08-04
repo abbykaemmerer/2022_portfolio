@@ -29,6 +29,9 @@
   background-color: #f5f5ef;
   border: 1px solid #1d1d1d;
   color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 h3 {

@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  public professionalClicked = true;
-  public personalClicked = false;
+  public professionalClicked = false;
+  public personalClicked = true;
 
   constructor() { }
 

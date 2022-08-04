@@ -1,3 +1,7 @@
+h3 {
+  font-size: 18px !important;
+}
+
 .button-row {
   display: flex;
   justify-content: center;
@@ -22,6 +26,37 @@
 .button-row:active {
   text-decoration: wavy;
 }
+
+/* PROFESSIONAL */
+.professional-div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.professional-div h3 {
+  margin: 0;
+}
+
+.professional-div h4 {
+  margin: 0;
+}
+
+.row{
+  margin: 10px;
+}
+
+.row p {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 12px;
+}
+
+
+
+/* PERSONAL */
 
 .personal-container {
   display: flex;

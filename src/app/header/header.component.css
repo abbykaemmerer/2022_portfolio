@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 1px solid #1d1d1d;
+  padding: 5px 0 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.nav-bar a:visited {
+  color: #1d1d1d;
+}
+
+.main-nav-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo span {
+  font-size: 2em;
+}
+
+.logo .material-symbols-outlined {
+  color: #de902d;
+}

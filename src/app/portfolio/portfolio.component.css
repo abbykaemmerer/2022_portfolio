@@ -1,0 +1,157 @@
+h3 {
+  font-size: 18px !important;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'BhuTuka Expanded One', cursive;
+  margin: 40px 0 20px 0;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.button-row h3 {
+  border: 1px solid #1d1d1d;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button-row h3:hover {
+  background-color: #e3e1ce;
+  color: #030303;
+}
+
+.button-row:active {
+  text-decoration: wavy;
+}
+
+/* PROFESSIONAL */
+.professional-div {
+  margin: 0 auto 30px auto;
+  background:#c1d6bbbf;
+  color: #528553;
+  border: 1px solid #1d1d1d;
+  padding: 20px 40px;
+  width: 700px;
+  height: 900px;
+}
+
+
+.professional-div h3 {
+  margin: 0;
+}
+
+.professional-div h4 {
+  margin: 0;
+}
+
+.row{
+  margin: 10px 0;
+}
+
+.row p {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.skills {
+  margin: 0;
+}
+
+.skills h4 {
+  font-size: 16px;
+}
+
+
+/* PERSONAL */
+
+.personal-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: #f5f5ee;
+}
+
+.project-div {
+  width: 400px;
+  border: 1px solid #1d1d1d;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.project-div:nth-of-type(1){
+  background-color: #de902d;
+}
+
+.project-div:nth-of-type(2){
+  background-color: #b8af46;
+}
+
+.project-div:nth-of-type(3){
+  background-color: #516aa6;
+}
+
+.screengrab img {
+  width: 100%;
+}
+
+.project-div h3, .resume-div h3 {
+  border-bottom: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  padding: 15px 0;
+}
+
+.project-div a {
+  border: 1px solid #1d1d1d;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: auto;
+  color: #f5f5ee;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ocm{
+  background-color: #516aa6;
+}
+
+.paws {
+  background-color: #de902d;
+}
+
+.port {
+  background-color: #b8af46;
+}
+
+.resume-div {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto 30px auto;
+}
+
+.resume-div h3 {
+  margin: 0 0 10px 0;
+}
+
+.resume-div p {
+  margin: 0;
+}
+
+.resume-div span a {
+  color: #b5b294;
+  text-decoration: none;
+}
+
+.resume-div span a:hover {
+  color: #7d7b67;
+}

@@ -1,0 +1,26 @@
+footer {
+  background-color: #e3e1ce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5ef;
+  padding: 10px;
+  border-top: none !important;
+}
+
+div:first-of-type {
+  margin: 10px;
+}
+
+a, a:visited {
+  color: #b8af46;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c943b;
+  font-weight: 900;
+  text-decoration: none;
+}

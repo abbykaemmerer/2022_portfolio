@@ -1,0 +1,37 @@
+/* Accent colors
+color: #e3e1ce;
+
+color: #b8af46;
+color: #de902d;
+color: #516aa6;
+color: #fe7049;
+
+color: #c1d6bb;
+color: #fdb094;
+color: #528553
+color: #eacf4f;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #f5f5ef;
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
+  font-family: 'Work Sans', sans-serif;
+  overflow: hidden;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+body:first-of-type {
+  margin: 0;
+  /* background: #f5f5ef;
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
+  font-family: 'Work Sans', sans-serif; */
+
+}
+

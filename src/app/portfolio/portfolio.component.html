@@ -1,0 +1,169 @@
+<div>
+  <div class="button-row">
+    <h3 (click)="goToPersonal()">Personal</h3>
+    <h3 (click)="goToProfessional()">Professional</h3>
+  </div>
+  <div>
+    <div *ngIf="professionalClicked" class="professional-div">
+      <hr>
+      <h3>Careers</h3>
+      <hr>
+      <div class="experiences">
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>TwisThink</h4>
+            <p class="date">March 2022 - present</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Software Engineer</strong>
+              <span>
+                  Design and develop front-end web experiences using the
+                  Angular framework and reusable web components.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>TDK Technologies</h4>
+            <p class="date">August 2019 - March 2022</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Software Engineer</strong>
+              <span>
+                Use Angular 12, TypeScript, HTML, CSS, npm and more to
+                assist in building the UI of an internal application that allows administrators to manage Mastercard Rewards configurations at the business partner, program, and promotion levels.
+              </span>
+            </p>
+          </div>
+        </div>
+      <hr>
+      <h3>Education</h3>
+      <hr>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>SavvyCoders</h4>
+            <p class="date">March 2019 - June 2019</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Front End Development Bootcamp</strong>
+              <span>
+                Curriculum included: HTML 5, CSS 3, JavaScript ES6, JSON,
+                Node.js, UX/UI, GitHub, Netlify, Trello, Wireframing and the Agile Methodology
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4>University of Missouri, Columbia</h4>
+            <p class="date">Aug 2012 - May 2016</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Bachelor of Sciences: Fisheries and Wildlife Sciences</strong>
+              <span>
+                Minor: Biological Sciences
+              </span>
+            </p>
+          </div>
+        </div>
+        <hr>
+        <h3>Skills</h3>
+        <hr>
+        <div class="experience row skills">
+          <div class="col-md-4">
+            <h4>Langauges</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span>
+                JavaScript, TypeScript, HTML 5, CSS 3, SASS, Node.js, Github, Bitbucket, NPM, Git,etc.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row skills">
+          <div class="col-md-4">
+            <h4>Productivity</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span>
+                Slack, Trello, Microsoft Teams, Jira, Miro, Azure, etc.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row skills">
+          <div class="col-md-4">
+            <h4>Others</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span>
+                Time management, Interpersonal skills, UI/UX Design, Unit testing, Communication, Team integration, Problem Solving, Adaptability, Accountability, etc.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="experience row skills">
+          <div class="col-md-4">
+            <h4>Currently Learning</h4>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span>
+                Back-end based skills, Docker, Yarn
+              </span>
+            </p>
+          </div>
+        </div>
+      <hr>
+      </div>
+    </div>
+    <div *ngIf="personalClicked" class="personal-container">
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/ocm.jpg" alt="Outdoor Color Magic">
+        </div>
+        <h3>Outdoor Color Magic</h3>
+        <p>A mobile responsive application promoting a fictional landscape architecture company, their services, and how to hire them.</p>
+        <a href="https://ocm-fict.netlify.app/" target="_blank" class="ocm">Check it out</a>
+      </div>
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/4paws.jpg" alt="Four Paws">
+        </div>
+        <h3>4PAWS</h3>
+        <p>An eCommerce web application designed to help pet owners find the best products for their pets. It is a state driven, modular single page application with functional components created using JavaScript ES6, HTML 5, CSS 3, JSON, Node.js, npm, and git.
+        4PAWS was my capstone project built at the end of my coding bootcamp. Since it was my first personal project, it holds a special place in my heart.</p>
+        <a href="https://abby-kaemmerer-capstone.netlify.com" target="_blank" class="paws">Check it out</a>
+      </div>
+      <div class="project-div">
+        <div class="screengrab">
+          <img src="../../assets/img/first-port-2.jpg" alt="First Portfolio">
+        </div>
+        <h3>My First Portfolio</h3>
+        <p>See how I've grown! I built this portfolio shortly after I had completed my bootcamp, using a state structure we learned in class.</p>
+        <a href="https://abby-kaemmerer-1.netlify.com" target="_blank" class="port">Check it out</a>
+      </div>
+    </div>
+  </div>
+  <div class="resume-div">
+    <h3>Looking for more?</h3>
+    <p>See more of my projects
+      <span>
+        <a href="https://github.com/abbykaemmerer" target="_blank">here</a>
+      </span>
+    </p>
+    <p>View my resume
+      <span>
+        <a href="https://www.dropbox.com/s/h117fk5oqkcwody/RESUME1-2022.pdf?dl=0" target="_blank">here</a>
+      </span>
+    </p>
+  </div>
+</div>

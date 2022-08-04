@@ -2,6 +2,10 @@ h3 {
   font-size: 18px !important;
 }
 
+h4 {
+  font-size: 16px;
+}
+
 .button-row {
   display: flex;
   justify-content: center;
@@ -30,8 +34,8 @@ h3 {
 /* PROFESSIONAL */
 .professional-div {
   margin: 0 auto 30px auto;
-  background:#c1d6bbbf;
-  color: #528553;
+  background:#b7af4673;
+  color: #666228;
   border: 1px solid #1d1d1d;
   padding: 20px 40px;
   width: 700px;
@@ -64,9 +68,7 @@ h3 {
   margin: 0;
 }
 
-.skills h4 {
-  font-size: 16px;
-}
+
 
 
 /* PERSONAL */

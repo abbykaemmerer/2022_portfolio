@@ -29,9 +29,18 @@ h3 {
 
 /* PROFESSIONAL */
 .professional-div {
-  width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
+  background:#c1d6bbbf;
+  color: #528553;
+  border: 1px solid #1d1d1d;
+  padding: 40px;
+  width: 40%;
 }
+
+
+/* .professional-div div, hr, h3, h4, p {
+  color: #b83606;
+} */
 
 .professional-div h3 {
   margin: 0;
@@ -119,9 +128,7 @@ h3 {
 }
 
 .resume-div {
-  border: 1px solid #1d1d1d;
   padding: 15px;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

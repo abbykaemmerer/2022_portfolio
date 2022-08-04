@@ -33,14 +33,11 @@ h3 {
   background:#c1d6bbbf;
   color: #528553;
   border: 1px solid #1d1d1d;
-  padding: 40px;
-  width: 40%;
+  padding: 20px 40px;
+  width: 700px;
+  height: 900px;
 }
 
-
-/* .professional-div div, hr, h3, h4, p {
-  color: #b83606;
-} */
 
 .professional-div h3 {
   margin: 0;
@@ -51,7 +48,7 @@ h3 {
 }
 
 .row{
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .row p {
@@ -63,6 +60,13 @@ h3 {
   font-size: 12px;
 }
 
+.skills {
+  margin: 0;
+}
+
+.skills h4 {
+  font-size: 16px;
+}
 
 
 /* PERSONAL */

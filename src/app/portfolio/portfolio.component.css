@@ -1,7 +1,31 @@
+.button-row {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'BhuTuka Expanded One', cursive;
+  margin: 40px 0 20px 0;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.button-row h3 {
+  border: 1px solid #1d1d1d;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button-row h3:hover {
+  background-color: #e3e1ce;
+  color: #030303;
+}
+
+.button-row:active {
+  text-decoration: wavy;
+}
+
 .personal-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 50px;
   color: #f5f5ee;
 }
 
@@ -9,6 +33,9 @@
   width: 400px;
   border: 1px solid #1d1d1d;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
 .project-div:nth-of-type(1){
@@ -27,17 +54,21 @@
   width: 100%;
 }
 
-h3 {
+.project-div h3, .resume-div h3 {
   border-bottom: 1px solid #1d1d1d;
   border-top: 1px solid #1d1d1d;
   padding: 15px 0;
 }
 
-.project-div button {
+.project-div a {
   border: 1px solid #1d1d1d;
   border-radius: 0;
   text-transform: uppercase;
   padding: 15px;
+  margin-top: auto;
+  color: #f5f5ee;
+  text-decoration: none;
+  text-align: center;
 }
 
 .ocm{
@@ -50,5 +81,31 @@ h3 {
 
 .port {
   background-color: #b8af46;
+}
 
+.resume-div {
+  border: 1px solid #1d1d1d;
+  padding: 15px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto 30px auto;
+}
+
+.resume-div h3 {
+  margin: 0 0 10px 0;
+}
+
+.resume-div p {
+  margin: 0;
+}
+
+.resume-div span a {
+  color: #b5b294;
+  text-decoration: none;
+}
+
+.resume-div span a:hover {
+  color: #7d7b67;
 }

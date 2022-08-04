@@ -1,8 +1,7 @@
 <div>
-  <div>
-    <button (click)="goToProfessional()">Professional</button>
-    <span>-</span>
-    <button (click)="goToPersonal()">Personal</button>
+  <div class="button-row">
+    <h3 (click)="goToProfessional()">Professional</h3>
+    <h3 (click)="goToPersonal()">Personal</h3>
   </div>
   <div>
     <div *ngIf="professionalClicked">
@@ -15,7 +14,7 @@
         </div>
         <h3>Outdoor Color Magic</h3>
         <p>A mobile responsive application promoting a fictional landscape architecture company, their services, and how to hire them.</p>
-        <button class="ocm">Check it out</button>
+        <a href="https://ocm-fict.netlify.app/" target="_blank" class="ocm">Check it out</a>
       </div>
       <div class="project-div">
         <div class="screengrab">
@@ -24,7 +23,7 @@
         <h3>4PAWS</h3>
         <p>An eCommerce web application designed to help pet owners find the best products for their pets. It is a state driven, modular single page application with functional components created using JavaScript ES6, HTML 5, CSS 3, JSON, Node.js, npm, and git.
         4PAWS was my capstone project built at the end of my coding bootcamp. Since it was my first personal project, it holds a special place in my heart.</p>
-        <button class="paws">Check it out</button>
+        <a href="https://abby-kaemmerer-capstone.netlify.com" target="_blank" class="paws">Check it out</a>
       </div>
       <div class="project-div">
         <div class="screengrab">
@@ -32,8 +31,21 @@
         </div>
         <h3>My First Portfolio</h3>
         <p>See how I've grown! I built this portfolio shortly after I had completed my bootcamp, using a state structure we learned in class.</p>
-        <button class="port">Check it out</button>
+        <a href="https://abby-kaemmerer-capstone.netlify.com" target="_blank" class="port">Check it out</a>
       </div>
     </div>
+  </div>
+  <div class="resume-div">
+    <h3>Looking for more?</h3>
+    <p>See more of my projects
+      <span>
+        <a href="https://github.com/abbykaemmerer" target="_blank">here</a>
+      </span>
+    </p>
+    <p>View my resume
+      <span>
+        <a href="https://www.dropbox.com/s/v6572urxzmterig/RESUME2021.pdf?dl=0" target="_blank">here</a>
+      </span>
+    </p>
   </div>
 </div>

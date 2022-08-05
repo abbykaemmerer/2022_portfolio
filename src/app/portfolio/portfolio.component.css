@@ -69,8 +69,6 @@ h4 {
 }
 
 
-
-
 /* PERSONAL */
 
 .first-row, .second-row {
@@ -99,6 +97,10 @@ h4 {
 
 .river {
   background-color: #516aa6;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .screengrab img {

@@ -1,14 +1,21 @@
+.about-container {
+  margin: 4em;
+}
+
 .picbio-container{
   height: 666px;
-  position: relative;
-  margin: 3% 0 0 30%;
+  /* position: relative; */
+  /* margin: 3% 0 0 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box{
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
 }
 
 .under {
@@ -21,8 +28,8 @@
 
 .stack-top{
   z-index: 9;
-  margin-left: 31em;
-  margin-top: 4em;
+  margin-left: -4em;
+  /*margin-top: 4em; */
   width: 400px;
   height: 550px;
   padding: 15px;
@@ -40,8 +47,8 @@ h3 {
 
 .fact-container {
   display: flex;
-  width: 95%;
-  margin: 20px 10%;
+  justify-content: center;
+  margin: 4em 0;
 }
 
 .fact-container div {
@@ -50,11 +57,15 @@ h3 {
   color: #f5f5ee;
   width: 200px;
   height: 200px;
-  margin: 40px 20px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.fact-container div p {
+  justify-content: center;
 }
 
 .fact-container div:nth-of-type(1){
@@ -77,4 +88,27 @@ h3 {
 
 .fact-container span {
   color: transparent;
+}
+
+/* Responsive */
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) { }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1200px) {
+  .picbio-container {
+    height: 666px;
+    position: relative;
+    margin: 3% 0 0 20%;
+  }
 }

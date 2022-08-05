@@ -20,6 +20,7 @@ h4 {
   border: 1px solid #1d1d1d;
   padding: 10px;
   margin: 10px;
+  box-shadow: 1px 1px #1d1d1d;
 }
 
 .button-row h3:hover {
@@ -27,8 +28,8 @@ h4 {
   color: #030303;
 }
 
-.button-row:active {
-  text-decoration: wavy;
+.button-row h3:active {
+  box-shadow: inset 1px 1px #1d1d1d;
 }
 
 /* PROFESSIONAL */

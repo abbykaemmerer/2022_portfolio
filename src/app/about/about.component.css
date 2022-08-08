@@ -92,23 +92,16 @@ h3 {
 
 /* Responsive */
 /* // Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
+@media (min-width: 955px) { 
 
-@media (min-width: 992px) { }
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
-
 @media (max-width: 1200px) {
-  .picbio-container {
-    height: 666px;
-    position: relative;
-    margin: 3% 0 0 20%;
-  }
 }

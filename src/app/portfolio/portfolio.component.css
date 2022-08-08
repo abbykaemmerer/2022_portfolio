@@ -123,6 +123,12 @@ h4 {
   color: #f5f5ee;
   text-decoration: none;
   text-align: center;
+  box-shadow: 1px 1px #1d1d1d;
+
+}
+
+.project-div a:active {
+  box-shadow: inset 1px 1px #1d1d1d;
 }
 
 .resume-div {

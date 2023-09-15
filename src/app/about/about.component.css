@@ -4,8 +4,6 @@
 
 .picbio-container{
   height: 666px;
-  /* position: relative; */
-  /* margin: 3% 0 0 30%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +11,6 @@
 .box{
   width: 100%;
   height: 100%;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
 }
 
 .under {
@@ -29,7 +24,6 @@
 .stack-top{
   z-index: 9;
   margin-left: -4em;
-  /*margin-top: 4em; */
   width: 400px;
   height: 550px;
   padding: 15px;
@@ -91,17 +85,46 @@ h3 {
 }
 
 /* Responsive */
-/* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (max-width: 845px) { 
+  .stack-top {
+   font-size: .9em;
+  }
+  .fact-container h3 {
+   font-size: 20px;
+  }
+ }
+ 
+@media (max-width: 700px) {
+  .stack-top h3 {
+    font-size: 18px;
+  }
+
+  .stack-top {
+    width: 80%;
+    margin-left: 70px;
+    margin-top: -50px;  
+  }
+
+  .picbio-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .under {
+    width: 80%;
+  }
+
+  .fact-container h3 {
+    font-size: 18px;
+   }
+
+  .fact-container {
+    font-size: .9em;
+   }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 955px) { 
 
-}
 
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-}

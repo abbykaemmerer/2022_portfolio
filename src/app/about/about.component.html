@@ -3,7 +3,7 @@
     <div class="box under">
       <img src="../../assets/img/abby2.JPG" alt="Me, being cute.">
     </div>
-    <figcaption class="box stack-top">
+    <figcaption *ngIf="!mobile" class="box stack-top">
       <h3>Hey, I'm Abby.</h3>
       <p>
         Follow me to learn more,
@@ -15,7 +15,27 @@
         Since then, I have been working professionally as a Software Engineer, specializing in Front End Development. From my education and professional experiences, I have learned how to optimize my time while working with many different teams and people. My experiences have taught me to be persistent, curious and efficient while also maintaining my creativity and passion for web development.
       </p>
     </figcaption>
+    <figcaption *ngIf="mobile" class="box mobile-intro">
+      <h3>Hey, I'm Abby.</h3>
+      <br>
+      <p>
+        Software engineer, animal enthusiast, and sour candy connoisseur.
+      </p>
+      <p>
+        Follow me to learn more.
+      </p>
+    </figcaption>
   </figure>
+  <div *ngIf="mobile" class="mobile-desc-container">
+    <div class="mobile-desc">
+      After graduating from the University of Missouri with a degree in Fisheries and Wildlife Sciences, I worked as a research technician for a few years before deciding to further my education by enrolling in a Front End Development bootcamp.
+      <br><br>
+      The SavvyCoders bootcamp was a swift and intense dive into the coding world. We learned JavaScript, Node.js, HTML, CSS, version control, GitHub, Netlify, Trello and ultimately, how to put together and code our own projects.
+      <br><br>
+      Since then, I have been working professionally as a Software Engineer, specializing in Front End Development. From my education and professional experiences, I have learned how to optimize my time while working with many different teams and people. My experiences have taught me to be persistent, curious and efficient while also maintaining my creativity and passion for web development.
+    </div>
+  
+  </div>
   <div class="facts-container">
     <div class=" facts-header">
       <h3>Fun Facts</h3>

@@ -176,3 +176,28 @@ h4 {
   padding: 10px;
   margin: 10px;
 }
+
+@media (max-width: 875px) { 
+  .first-row, .second-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .professional-div {
+    height: auto;
+  }
+  .professional-div h3 {
+    font-size: 1.2em;
+  }
+  .professional-div h4 {
+    font-size: 1em;
+  }
+
+ }
+
+@media (max-width: 700px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

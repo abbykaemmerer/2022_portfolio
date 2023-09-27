@@ -1,5 +1,5 @@
 h3 {
-  font-size: 18px !important;
+  /* font-size: 18px !important; */
 }
 
 h4 {
@@ -26,6 +26,7 @@ h4 {
 .button-row h3:hover {
   background-color: #e3e1ce;
   color: #030303;
+  box-shadow: inset 1px 1px #1d1d1d;
 }
 
 .button-row h3:active {
@@ -131,6 +132,10 @@ h4 {
   box-shadow: inset 1px 1px #1d1d1d;
 }
 
+.project-div a:hover {
+  box-shadow: inset 1px 1px #1d1d1d;
+}
+
 .resume-div {
   padding: 15px;
   display: flex;
@@ -157,10 +162,17 @@ h4 {
 }
 
 .working-on-div {
-  border: 1px solid #1d1d1d;
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px auto;
+}
+
+.working-on-div h3 {  
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 900;
+  padding: 10px;
+  margin: 10px;
 }

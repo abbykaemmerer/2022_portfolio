@@ -19,6 +19,7 @@
 
 .under img {
   width: 100%;
+  border: 1px solid #1d1d1d;
 }
 
 .stack-top{

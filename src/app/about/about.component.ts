@@ -17,5 +17,4 @@ export class AboutComponent implements OnInit {
       this.mobile = true;
     }
   }
-
 }

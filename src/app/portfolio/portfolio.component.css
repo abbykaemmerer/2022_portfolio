@@ -177,18 +177,17 @@ h4 {
 }
 
 @media (max-width: 875px) { 
-  .first-row, .second-row {
+  .first-row {
     flex-direction: column;
     align-items: center;
   }
+  .second-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .professional-div {
     height: auto;
-  }
-  .professional-div h3 {
-    font-size: 1.2em;
-  }
-  .professional-div h4 {
-    font-size: 1em;
   }
 
  }
@@ -202,5 +201,7 @@ h4 {
 }
 
 @media (max-width: 576px) {
-
+  .project-div {
+    width: 80%;
+  }
 }

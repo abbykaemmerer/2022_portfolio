@@ -43,12 +43,12 @@ h3 {
   color: #1d1d1d;
   text-align: center;
   text-shadow: 1px 1px 2px #b8af46;
+  margin: 20px;
 }
 
 .facts {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
 }
 
 .facts div {
@@ -84,7 +84,7 @@ h3 {
 }
 
 /* Responsive */
-@media (min-width: 576px) {}
+
 
 @media (max-width: 845px) { 
   .stack-top {
@@ -114,30 +114,29 @@ h3 {
   .under {
     width: 80%;
   }
-
-  /* .facts {
-    flex-direction: column;
-  }
-  
-  .facts div {
-    width: 150px;
-    margin: 20px 0;
-  }
-
-  .facts div:nth-of-type(1){
-    margin-left: 35%;
-  }
-
-  .facts div:nth-of-type(2){
-    margin-left: 50%;
-  }
-
-  .facts div:nth-of-type(3){
-    margin-left: 35%;
-  } */
-  
 }
 
-/* // Large devices (desktops, 992px and up) */
+@media (max-width: 576px) {
+  .stack-top {
+    width: 100%;
+    margin-left: 70px;
+    margin-top: -50px;  
+    height: fit-content;
+  }
+  .under {
+    width: 100%;
+  }
+  .facts {
+    font-size: .9em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .facts div {
+    margin: 10px;
+  }
+  .facts-header {
+    margin: 30px 0 20px;
+  }
+}
 
 

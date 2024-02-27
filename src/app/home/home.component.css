@@ -1,0 +1,24 @@
+.grid-container {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   width: 50%;
+}
+
+.grid-container div {
+  border: 1px solid black;
+  height: 200px;
+}
+  
+#item-0 {
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 2;
+   grid-column-end: 2;
+}
+
+.blue {
+   background-color: #2b4c81; 
+}
+
+

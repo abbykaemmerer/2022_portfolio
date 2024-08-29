@@ -176,28 +176,14 @@ hr {
   box-shadow: 1px 1px #1d1d1d;
 }
 
-.project-div a:active {
+.project-div a:active,
+.preview-button a:active {
   box-shadow: inset 1px 1px #1d1d1d;
 }
 
-.project-div a:hover {
+.project-div a:hover,
+.preview-button a:hover {
   box-shadow: inset 1px 1px #1d1d1d;
-}
-
-.preview-button {
-  border: 1px solid #1d1d1d;
-  border-radius: 0;
-  text-transform: uppercase;
-  padding: 15px;
-  margin-top: 10px;
-  text-decoration: none;
-  text-align: center;
-  box-shadow: 1px 1px #1d1d1d;
-  background: #e33923;
-}
-
-.preview-button a {
-  color: #f5f5ee;
 }
 
 .sunny {
@@ -218,6 +204,24 @@ hr {
 
 .screengrab img {
   width: 100%;
+}
+
+.preview-button a{
+  border: 1px solid #1d1d1d;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 1px #1d1d1d;
+  background: #e33923;
+  color: #f5f5ee;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-button {
+  margin-top: 10px;
 }
 
 /* Responsive */

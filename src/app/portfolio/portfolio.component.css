@@ -184,6 +184,22 @@ hr {
   box-shadow: inset 1px 1px #1d1d1d;
 }
 
+.preview-button {
+  border: 1px solid #1d1d1d;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 1px #1d1d1d;
+  background: #e33923;
+}
+
+.preview-button a {
+  color: #f5f5ee;
+}
+
 .sunny {
   background-color: #de902d;
 }

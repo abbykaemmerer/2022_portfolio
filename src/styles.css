@@ -14,6 +14,9 @@
   --font-mark: 'Lobster', cursive;
   --page-max: 1320px;
   --page-pad: clamp(1.25rem, 4vw, 4rem);
+  --card-olive: #a8aa7a;
+  --card-blue: #afc2c8;
+  --card-wine: #a86a74;
 }
 
 *,
@@ -42,12 +45,61 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
+.retro-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 15px 12px;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 1px 1px var(--ink);
+}
+
+.retro-btn--block {
+  width: 100%;
+}
+
+.retro-btn:hover,
+.retro-btn:focus-visible,
+.retro-btn:active {
+  box-shadow: inset 1px 1px var(--ink);
+}
+
+.retro-btn:not(.retro-btn--block):hover,
+.retro-btn:not(.retro-btn--block):focus-visible {
+  background: color-mix(in srgb, var(--cream) 72%, var(--olive));
+  color: var(--ink);
+}
+
+.retro-btn.is-active {
+  background: var(--olive);
+  color: var(--cream);
+  box-shadow: inset 1px 1px var(--ink);
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

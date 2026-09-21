@@ -1,0 +1,183 @@
+:host {
+  display: block;
+}
+
+.work__header {
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+}
+
+.work__title {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.work__intro {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 15px;
+  color: var(--ink);
+}
+
+.card--olive {
+  background: var(--card-olive);
+}
+
+.card--blue {
+  background: var(--card-blue);
+}
+
+.card--wine {
+  background: var(--card-wine);
+}
+
+.card--olive .retro-btn {
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.card--blue .retro-btn {
+  background: var(--olive);
+  color: var(--cream);
+}
+
+.card--wine .retro-btn {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.work--professional .card {
+  background: var(--cream);
+}
+
+.work--professional .retro-btn {
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.work--professional .retro-btn--soon {
+  background: var(--soft-blue);
+  color: var(--ink);
+  pointer-events: none;
+  cursor: default;
+  box-shadow: 1px 1px var(--ink);
+}
+
+.card__media {
+  border: 1px solid var(--ink);
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.card__media img,
+.card__placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  box-sizing: border-box;
+  background: var(--soft-blue);
+  color: var(--ink);
+}
+
+.card__placeholder-kicker {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink) 70%, var(--cream));
+}
+
+.card__placeholder-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.15rem);
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.card__title {
+  margin: 0;
+  padding: 15px 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.card__desc,
+.card__tech {
+  margin: 0.7rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.card__tech {
+  margin-bottom: 0.85rem;
+}
+
+.card .retro-btn {
+  margin-top: auto;
+}
+
+.more {
+  margin: 2rem 0 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.more a {
+  color: var(--wine);
+  text-underline-offset: 0.15em;
+}
+
+.more a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

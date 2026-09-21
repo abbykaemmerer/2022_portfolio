@@ -1,23 +1,11 @@
-import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { PortfolioNav } from './portfolio-nav';
 
 @Component({
-  imports: [NgIf],
+  imports: [PortfolioNav, RouterOutlet],
   selector: 'app-portfolio',
   styleUrl: './portfolio.css',
   templateUrl: './portfolio.html',
 })
-export class Portfolio {
-  public professionalClicked = false;
-  public personalClicked = true;
-
-  goToProfessional() {
-    this.professionalClicked = true;
-    this.personalClicked = false;
-  }
-
-  goToPersonal() {
-    this.personalClicked = true;
-    this.professionalClicked = false;
-  }
-}
+export class Portfolio {}

@@ -1,0 +1,59 @@
+<section
+  class="work"
+  [class.work--professional]="view() === 'professional'"
+  [attr.aria-labelledby]="view() + '-heading'"
+>
+  <header class="work__header">
+    @if (view() === 'professional') {
+      <h1 id="professional-heading" class="work__title">Professional Work</h1>
+      <p class="work__intro">A selection of client, freelance, and production work.</p>
+    } @else {
+      <h1 id="personal-heading" class="work__title">Personal Projects</h1>
+      <p class="work__intro">Experiments, practice builds, and things I made because I wanted to.</p>
+    }
+  </header>
+
+  <ul class="grid">
+    @for (project of projects(); track project.title) {
+      <li>
+        <article
+          class="card"
+          [class.card--olive]="project.tone === 'olive'"
+          [class.card--blue]="project.tone === 'blue'"
+          [class.card--wine]="project.tone === 'wine'"
+        >
+          <div class="card__media">
+            @if (project.image) {
+              <img [src]="project.image" [alt]="project.alt">
+            } @else {
+              <div class="card__placeholder" role="img" [attr.aria-label]="project.alt">
+                <span class="card__placeholder-kicker">Under construction</span>
+                <span class="card__placeholder-label">Coming soon</span>
+              </div>
+            }
+          </div>
+          <h2 class="card__title">{{ project.title }}</h2>
+          <p class="card__desc">{{ project.description }}</p>
+          <p class="card__tech">Tech stack: {{ project.tech }}</p>
+          @if (project.cta === 'live' && project.href) {
+            <a
+              class="retro-btn retro-btn--block"
+              [href]="project.href"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Check it out</a>
+          } @else if (project.cta === 'sneakPeek') {
+            <span class="retro-btn retro-btn--block retro-btn--soon" aria-disabled="true">Sneak peek</span>
+          } @else {
+            <span class="retro-btn retro-btn--block retro-btn--soon" aria-disabled="true">Coming soon</span>
+          }
+        </article>
+      </li>
+    }
+  </ul>
+
+  <p class="more">
+    Looking for more?
+    <a href="https://github.com/abbykaemmerer" target="_blank" rel="noopener noreferrer">See GitHub</a>
+  </p>
+</section>

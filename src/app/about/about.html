@@ -1,12 +1,15 @@
 <article class="home">
   <section class="intro" aria-labelledby="home-heading">
     <figure class="intro__photo">
-      <img
-        [src]="portraitSrc"
-        [alt]="portraitAlt"
-        width="1200"
-        height="1500"
-      >
+      <picture>
+        <source media="(max-width: 760px)" [srcset]="portraitSrcMobile">
+        <img
+          [src]="portraitSrc"
+          [alt]="portraitAlt"
+          width="1200"
+          height="1500"
+        >
+      </picture>
     </figure>
     <div class="intro__copy">
       <p class="eyebrow">Hello, I’m Abby</p>

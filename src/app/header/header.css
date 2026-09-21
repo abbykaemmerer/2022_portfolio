@@ -64,20 +64,39 @@
 
 @media (max-width: 700px) {
   .site-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'logo logo logo'
+      'home portfolio contact';
+    align-items: center;
     row-gap: 0.65rem;
+    column-gap: 0;
     padding: 0.9rem var(--page-pad) 0.85rem;
   }
 
   .logo {
-    flex: 1 0 100%;
-    order: -1;
+    grid-area: logo;
+    justify-self: center;
   }
 
   .site-nav__cluster {
     display: contents;
+  }
+
+  .site-nav__cluster--start a:first-child {
+    grid-area: home;
+    justify-self: start;
+  }
+
+  .site-nav__cluster--start a:last-child {
+    grid-area: portfolio;
+    justify-self: center;
+  }
+
+  .site-nav__cluster--end a {
+    grid-area: contact;
+    justify-self: end;
   }
 
   .site-nav a:not(.logo) {

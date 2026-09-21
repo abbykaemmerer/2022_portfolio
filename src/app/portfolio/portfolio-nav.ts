@@ -16,6 +16,21 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     .controls .retro-btn {
       min-width: 11.5rem;
     }
+
+    @media (max-width: 700px) {
+      .controls {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 0.55rem;
+        margin: 0 0 1.5rem;
+      }
+
+      .controls .retro-btn {
+        width: 100%;
+        min-width: 0;
+      }
+    }
   `,
   template: `
     <nav class="controls" aria-label="Portfolio sections">

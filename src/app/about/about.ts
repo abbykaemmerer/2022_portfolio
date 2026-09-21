@@ -8,10 +8,11 @@ import { RouterLink } from '@angular/router';
   templateUrl: './about.html',
 })
 export class About {
-  /** Swap this path to change the homepage portrait. */
+  /** Desktop stacked portraits. Mobile uses portraitSrcMobile. */
   readonly portraitSrc = '/assets/img/headshots/trio.jpeg';
+  readonly portraitSrcMobile = '/assets/img/headshots/me.JPG';
   readonly portraitAlt =
-    'Three cafe portraits of Abby: looking up from a laptop, smiling at the camera, and working at a table.';
+    'Abby in a cafe, looking up from a laptop.';
 
   readonly funFacts = [
     'May stop mid-conversation to identify a bug.',

@@ -1,63 +1,51 @@
-<div>
-  <div class="hey-header">
-    <h1>Howdy!</h1>
-  </div>
-  <div class="half-layout form">
-    <div class="contact-photo">
+<article class="contact">
+  <h1 class="contact__title">Howdy!</h1>
+
+  <div class="contact__layout">
+    <figure class="contact__photo">
       <img src="/assets/img/hey.jpg" alt="Abby waving, with her shadow on a green wall">
-    </div>
-    <div class="form-div">
-      <form
-        action="https://formspree.io/f/myyvgljr"
-        method="POST"
-        class="side-margin"
-        (input)="onFormInput($event)"
-      >
-        <fieldset>
-          <legend>Who are you?</legend>
-          <div class="name-div bottom-margin">
-            <div>
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName" required autocomplete="given-name">
-            </div>
-            <div>
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="lastName" required autocomplete="family-name">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Email</legend>
-          <div class="bottom-margin">
-            <label class="sr-only" for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              autocomplete="email"
-              placeholder="hihellohowdy@gmail.com"
-            >
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Phone</legend>
-          <div class="bottom-margin">
-            <label class="sr-only" for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Message</legend>
-          <div>
-            <label class="sr-only" for="msg">Message</label>
-            <textarea id="msg" name="msg" cols="100" rows="5" required></textarea>
-          </div>
-        </fieldset>
-        <div class="submit">
-          <input type="submit" value="SEND" [disabled]="!canSubmit">
+    </figure>
+
+    <form
+      class="contact__form"
+      action="https://formspree.io/f/xeaogazo"
+      method="POST"
+      (input)="onFormInput($event)"
+    >
+      <h2 class="contact__intro-title">Who are you?</h2>
+      <p class="contact__intro">Have a project, job, or idea in mind? Send me a note.</p>
+
+      <div class="contact__names">
+        <div class="contact__field">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="firstName" required autocomplete="given-name">
         </div>
-      </form>
-    </div>
+        <div class="contact__field">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="lastName" required autocomplete="family-name">
+        </div>
+      </div>
+
+      <div class="contact__field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder="hihellohowdy@gmail.com"
+        >
+      </div>
+
+      <div class="contact__field">
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" rows="5" required></textarea>
+      </div>
+
+      <div class="contact__submit">
+        <button type="submit" class="retro-btn retro-btn--block retro-btn--cta" [disabled]="!canSubmit">Send</button>
+      </div>
+    </form>
   </div>
-</div>
+</article>

@@ -31,7 +31,7 @@
           <p class="card__tech">Tech stack: {{ project.tech }}</p>
           @if (project.cta === 'live' && project.href) {
             <a
-              class="retro-btn retro-btn--block"
+              class="retro-btn retro-btn--block retro-btn--cta"
               [href]="project.href"
               target="_blank"
               rel="noopener noreferrer"

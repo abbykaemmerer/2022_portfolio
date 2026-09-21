@@ -62,6 +62,20 @@ h4 {
   border: 1px solid #1d1d1d;
   padding: 20px 30px;
   width: 700px;
+  max-width: calc(100% - 40px);
+}
+
+.professional-div ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.professional-div li {
+  margin-bottom: 6px;
+}
+
+.project-name {
+  margin-top: 4px;
 }
 
 .professional-div h3 {

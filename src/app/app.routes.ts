@@ -4,8 +4,9 @@ import { Contact } from './contact/contact';
 import { Portfolio } from './portfolio/portfolio';
 
 export const routes: Routes = [
-  { path: '', component: About },
-  { path: 'about', component: About },
+  { path: '', pathMatch: 'full', component: About },
+  { path: 'about', redirectTo: '', pathMatch: 'full' },
   { path: 'portfolio', component: Portfolio },
   { path: 'contact', component: Contact },
+  { path: '**', redirectTo: '' },
 ];

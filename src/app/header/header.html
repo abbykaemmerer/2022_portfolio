@@ -1,18 +1,22 @@
 <div class="header">
-  <div class="logo">
+  <a routerLink="/" class="logo" aria-label="Abby Kaemmerer home">
     <span>A</span>
-    <span class="material-symbols-outlined">
-      bolt
-    </span>
+    <span class="material-symbols-outlined">bolt</span>
     <span>K</span>
-  </div>
+  </a>
   <div class="nav-bar">
     <div class="main-nav-btns">
-      <div><a routerLink="../about">Home</a></div>
-      <div><a routerLink="../portfolio">Portfolio</a></div>
+      <div>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </div>
+      <div>
+        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+      </div>
     </div>
     <div>
-      <div><a routerLink="../contact">Contact</a></div>
+      <div>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      </div>
     </div>
   </div>
 </div>

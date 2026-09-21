@@ -20,17 +20,23 @@
   color: #1d1d1d;
 }
 
+.nav-bar a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #de902d;
+}
+
 .main-nav-btns {
   display: flex;
   flex-direction: row;
 }
 
 .logo {
-    font-family: 'Lobster', cursive;
-    color: #1d1d1d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: 'Lobster', cursive;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .logo span {

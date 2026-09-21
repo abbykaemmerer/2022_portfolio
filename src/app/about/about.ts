@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   imports: [NgIf],
@@ -8,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.html',
 })
 export class About implements OnInit {
-  public mobile: boolean | undefined;
+  public mobile = false;
 
   ngOnInit(): void {
-    if (window.innerWidth < 630) {
-      this.mobile = true;
-    }
+    this.updateMobile();
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.updateMobile();
+  }
+
+  private updateMobile(): void {
+    this.mobile = window.innerWidth < 630;
   }
 }

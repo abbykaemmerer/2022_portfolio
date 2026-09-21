@@ -4,43 +4,58 @@
   </div>
   <div class="half-layout form">
     <div class="contact-photo">
-      <img src="/assets/img/hey.jpg">
+      <img src="/assets/img/hey.jpg" alt="Abby waving, with her shadow on a green wall">
     </div>
     <div class="form-div">
-      <form action="https://formspree.io/f/myyvgljr" method="POST" class="side-margin">
-        <legend>Who are you?</legend>
-        <div class="name-div bottom-margin">
-          <div>
-            <input type="text" id="first-name" name="firstName"/>
-            <label for="first-name">
-              <span>First Name</span>
-            </label>
+      <form
+        action="https://formspree.io/f/myyvgljr"
+        method="POST"
+        class="side-margin"
+        (input)="onFormInput($event)"
+      >
+        <fieldset>
+          <legend>Who are you?</legend>
+          <div class="name-div bottom-margin">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="firstName" required autocomplete="given-name">
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lastName" required autocomplete="family-name">
+            </div>
           </div>
-          <div>
-            <input type="text" id="last-name" name="lastName">
-            <label for="last-name">
-              <span>Last Name</span>
-            </label>
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <div class="bottom-margin">
+            <label class="sr-only" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="hihellohowdy@gmail.com"
+            >
           </div>
-        </div>
-        <legend>Email</legend>
-        <div class="bottom-margin">
-          <input
-            type="email"
-            name="email"
-            placeholder="hihellohowdy@gmail.com"
-          />
-        </div>
-        <legend>Phone</legend>
-        <div class="bottom-margin">
-          <input type="tel" name="phone"/>
-        </div>
-        <legend>Message</legend>
-        <div>
-          <textarea name="msg" cols="100" rows="5"></textarea>
-        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Phone</legend>
+          <div class="bottom-margin">
+            <label class="sr-only" for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Message</legend>
+          <div>
+            <label class="sr-only" for="msg">Message</label>
+            <textarea id="msg" name="msg" cols="100" rows="5" required></textarea>
+          </div>
+        </fieldset>
         <div class="submit">
-          <input type="submit" value="SEND" />
+          <input type="submit" value="SEND" [disabled]="!canSubmit">
         </div>
       </form>
     </div>

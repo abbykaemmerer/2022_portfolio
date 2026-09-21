@@ -4,7 +4,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #f5f5ef;
+  color: #1d1d1d;
   padding: 10px;
   border-top: none !important;
 }
@@ -13,14 +13,15 @@ div:first-of-type {
   margin: 10px;
 }
 
-a, a:visited {
-  color: #b8af46;
+a,
+a:visited {
+  color: #45431d;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9c943b;
+  color: #1d1d1d;
   font-weight: 900;
   text-decoration: none;
 }

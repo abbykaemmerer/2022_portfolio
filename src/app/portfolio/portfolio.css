@@ -96,8 +96,18 @@ h4 {
   margin-top: 20px;
 }
 
-.row{
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 0.75rem 1.25rem;
   margin: 10px 0;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
 }
 
 .row p {

@@ -20,20 +20,20 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   template: `
     <nav class="controls" aria-label="Portfolio sections">
       <a
-        class="retro-btn"
+        class="retro-btn retro-btn--nav"
+        routerLink="/resume"
+        routerLinkActive="is-active"
+      >Resume</a>
+      <a
+        class="retro-btn retro-btn--nav"
         routerLink="/portfolio/professional"
         routerLinkActive="is-active"
       >Professional Work</a>
       <a
-        class="retro-btn"
+        class="retro-btn retro-btn--nav"
         routerLink="/portfolio/personal"
         routerLinkActive="is-active"
       >Personal Projects</a>
-      <a
-        class="retro-btn"
-        routerLink="/resume"
-        routerLinkActive="is-active"
-      >Resume</a>
     </nav>
   `,
 })

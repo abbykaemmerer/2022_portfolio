@@ -1,6 +1,5 @@
 <section
   class="work"
-  [class.work--professional]="view() === 'professional'"
   [attr.aria-labelledby]="view() + '-heading'"
 >
   <header class="work__header">
@@ -16,12 +15,7 @@
   <ul class="grid">
     @for (project of projects(); track project.title) {
       <li>
-        <article
-          class="card"
-          [class.card--olive]="project.tone === 'olive'"
-          [class.card--blue]="project.tone === 'blue'"
-          [class.card--wine]="project.tone === 'wine'"
-        >
+        <article class="card">
           <div class="card__media">
             @if (project.image) {
               <img [src]="project.image" [alt]="project.alt">
@@ -42,10 +36,6 @@
               target="_blank"
               rel="noopener noreferrer"
             >Check it out</a>
-          } @else if (project.cta === 'sneakPeek') {
-            <span class="retro-btn retro-btn--block retro-btn--soon" aria-disabled="true">Sneak peek</span>
-          } @else {
-            <span class="retro-btn retro-btn--block retro-btn--soon" aria-disabled="true">Coming soon</span>
           }
         </article>
       </li>

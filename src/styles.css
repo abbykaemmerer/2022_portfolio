@@ -76,15 +76,31 @@ textarea:focus-visible {
   box-shadow: inset 1px 1px var(--ink);
 }
 
-.retro-btn:not(.retro-btn--block):hover,
-.retro-btn:not(.retro-btn--block):focus-visible {
-  background: color-mix(in srgb, var(--cream) 72%, var(--olive));
+.retro-btn:not(.retro-btn--block):not(.is-active):not(.retro-btn--nav):hover,
+.retro-btn:not(.retro-btn--block):not(.is-active):not(.retro-btn--nav):focus-visible {
+  background: color-mix(in srgb, var(--cream) 82%, var(--wine));
+  color: var(--wine);
+  border-color: var(--wine);
+}
+
+.retro-btn--nav:not(.is-active):hover,
+.retro-btn--nav:not(.is-active):focus-visible {
+  background: color-mix(in srgb, var(--cream) 68%, var(--olive));
   color: var(--ink);
+  border-color: var(--ink);
 }
 
 .retro-btn.is-active {
   background: var(--olive);
   color: var(--cream);
+  box-shadow: inset 1px 1px var(--ink);
+}
+
+.retro-btn.is-active:hover,
+.retro-btn.is-active:focus-visible {
+  background: color-mix(in srgb, var(--olive) 82%, var(--ink));
+  color: var(--cream);
+  border-color: var(--ink);
   box-shadow: inset 1px 1px var(--ink);
 }
 

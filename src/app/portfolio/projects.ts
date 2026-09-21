@@ -14,10 +14,19 @@ export interface ProjectCard {
 
 export const professionalProjects: ProjectCard[] = [
   {
+    title: 'Emma Highley Charm Builder',
+    description:
+      'A custom Shopify charm builder that lets shoppers choose a base necklace, add charms, and preview their combination before purchasing. Currently in development.',
+    tech: 'Shopify · JavaScript · HTML · CSS',
+    alt: 'Coming soon placeholder for the Emma Highley charm builder',
+    tone: 'olive',
+    cta: 'comingSoon',
+  },
+  {
     title: 'interos.ai',
     description:
-      'Production work on the company’s customer-facing marketing website: a React and TypeScript rebuild covering architecture, releases, accessibility, and performance.',
-    tech: 'React, TypeScript, Storybook, HTML, CSS',
+      'Rebuilt and owned Interos’ customer-facing web platform, leading front-end architecture, reusable systems, accessibility, performance, releases, and ongoing production development.',
+    tech: 'React · TypeScript · WordPress · HTML · CSS',
     image: '/assets/img/professional-work/interos.png',
     alt: 'Screenshot of the interos.ai customer-facing website',
     href: 'https://www.interos.ai',
@@ -27,8 +36,8 @@ export const professionalProjects: ProjectCard[] = [
   {
     title: 'Nowadays Film',
     description:
-      'Squarespace website design and build for a photographer, including site structure, custom styling, color palette, logo design, and brand direction. Site has since been client-managed.',
-    tech: 'Squarespace, JavaScript, HTML, CSS',
+      'Designed and built a Squarespace site for a photographer, including the site structure, custom styling, color palette, logo, and overall brand direction. The site has since been client-managed.',
+    tech: 'Squarespace · JavaScript · HTML · CSS',
     image: '/assets/img/professional-work/nowadays.png',
     alt: 'Screenshot of the Nowadays Film website',
     tone: 'wine',
@@ -38,31 +47,31 @@ export const professionalProjects: ProjectCard[] = [
   {
     title: 'Emily Duddy Art',
     description:
-      `A website built for ZE Collective's client, Emily Duddy. To showcase her art, sell her current collection and allow people to contact her with inquires. Site has since been client-managed.`,
-    tech: 'Squarespace, JavaScript, HTML, CSS',
+      `Designed and built a Squarespace site and logo for artist Emily Duddy to showcase her work, sell available pieces, and manage customer inquiries. The site has since been client-managed.`,
+    tech: 'Squarespace · JavaScript · HTML · CSS',
     image: '/assets/img/professional-work/emily-duddy.png',
     alt: 'Screenshot of the Emily Duddy Art website',
     href: 'https://emily-duddy.com',
     tone: 'olive',
     cta: 'live',
-  },
-  {
-    title: 'Emma Highley Charm Builder',
-    description:
-      'A custom React/Typescript charm-builder for an upcoming freelance client. Visitors will mix and match charms into a piece they can actually buy.',
-    tech: 'Shopify, JavaScript, HTML, CSS',
-    alt: 'Coming soon placeholder for the Emma Highley charm builder',
-    tone: 'olive',
-    cta: 'comingSoon',
-  },
+  }
 ];
 
 export const personalProjects: ProjectCard[] = [
   {
-    title: 'Clothing Swap Invitation & RSVP system',
+    title: 'What Should Abby Do Tonight?',
     description:
-      'A mobile first clothing swap invitation application. Will include an RSVP system to allow the user to see who will be attending as well as messaging the host with the guest details.',
-    tech: 'React, JavaScript, HTML, CSS, NPM',
+      'A React + TypeScript app that uses weather, sunset, mood, and company to recommend one Austin activity for the night, with a couple of backup options if the first pick doesn’t hit.',
+    tech: 'React · TypeScript · APIs · CSS',
+    alt: 'Coming soon placeholder for What Should Abby Do Tonight?',
+    tone: 'olive',
+    cta: 'comingSoon',
+  },
+  {
+    title: 'Clothing Swap Invitation & RSVP',
+    description:
+      'A mobile-first invitation and RSVP app for clothing swaps, designed to keep event details, attendance, and guest communication in one place.',
+    tech: 'React · JavaScript · HTML · CSS',
     image: '/assets/img/personal-projects/swap.png',
     alt: 'Screenshot of the clothing swap invitation app',
     href: 'https://krabby-swap.netlify.app/',
@@ -72,8 +81,8 @@ export const personalProjects: ProjectCard[] = [
   {
     title: 'Adventure Awaits',
     description:
-      'A faux travel agency for booking tours, experiences and excursions. Built to practice my React skills.',
-    tech: 'React, JavaScript, HTML, CSS, NPM',
+      'A travel-booking concept for browsing tours, experiences, and excursions, built as an early React project focused on reusable UI and component-based development.',
+    tech: 'React · JavaScript · HTML · CSS',
     image: '/assets/img/personal-projects/adventure.png',
     alt: 'Screenshot of the Adventure Awaits travel site',
     href: 'https://adventure-awaits-ak.netlify.app/',
@@ -83,8 +92,8 @@ export const personalProjects: ProjectCard[] = [
   {
     title: 'TDH Portfolio',
     description:
-      'A portfolio for an individual offering a variety of custom creative projects including rugs and graphic design.',
-    tech: 'TypeScript, JavaScript, Angular, Angular CLI, HTML, CSS, NPM',
+      'A portfolio site for a multidisciplinary creative, built to showcase custom rugs, graphic design, and other commissioned work.',
+    tech: 'Angular · TypeScript · HTML · CSS',
     image: '/assets/img/personal-projects/tdh.png',
     alt: 'Screenshot of the TDH portfolio site',
     href: 'https://tdh-offical.netlify.app/',
@@ -94,8 +103,8 @@ export const personalProjects: ProjectCard[] = [
   {
     title: '4PAWS',
     description:
-      'An eCommerce web application designed to help pet owners find the best products for their pets. It is a state driven, modular single page application with functional components. 4PAWS was my capstone project built at the end of my coding bootcamp.',
-    tech: 'JavaScript, HTML, CSS, NPM',
+      'My bootcamp capstone: a pet-product shopping app built as a modular single-page experience for browsing products by animal and category.',
+    tech: 'JavaScript · HTML · CSS',
     image: '/assets/img/personal-projects/4paws.jpg',
     alt: 'Screenshot of the 4PAWS pet products app',
     href: 'https://abby-kaemmerer-capstone.netlify.com',
@@ -105,8 +114,8 @@ export const personalProjects: ProjectCard[] = [
   {
     title: 'The RGB Game',
     description:
-      'A simple project developed to practice JavaScript. Choose the color that coincides with the RBG code and you win!',
-    tech: 'JavaScript, HTML, CSS, NPM',
+      'A color-guessing game where players match an RGB value to the correct swatch. One of my earliest JavaScript projects.',
+    tech: 'JavaScript · HTML · CSS',
     image: '/assets/img/personal-projects/game.jpg',
     alt: 'Screenshot of the RGB color guessing game',
     href: 'https://thegreatestcolorgameever.netlify.app/',

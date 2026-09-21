@@ -40,50 +40,13 @@
   border-radius: 0;
   padding: 15px;
   color: var(--ink);
-}
-
-.card--olive {
-  background: var(--card-olive);
-}
-
-.card--blue {
-  background: var(--card-blue);
-}
-
-.card--wine {
-  background: var(--card-wine);
-}
-
-.card--olive .retro-btn {
-  background: var(--wine);
-  color: var(--cream);
-}
-
-.card--blue .retro-btn {
-  background: var(--olive);
-  color: var(--cream);
-}
-
-.card--wine .retro-btn {
-  background: var(--ink);
-  color: var(--cream);
-}
-
-.work--professional .card {
   background: var(--cream);
 }
 
-.work--professional .retro-btn {
+.card .retro-btn {
+  margin-top: auto;
   background: var(--wine);
   color: var(--cream);
-}
-
-.work--professional .retro-btn--soon {
-  background: var(--soft-blue);
-  color: var(--ink);
-  pointer-events: none;
-  cursor: default;
-  box-shadow: 1px 1px var(--ink);
 }
 
 .card__media {
@@ -149,10 +112,6 @@
 
 .card__tech {
   margin-bottom: 0.85rem;
-}
-
-.card .retro-btn {
-  margin-top: auto;
 }
 
 .more {

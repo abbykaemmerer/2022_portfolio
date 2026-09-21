@@ -1,22 +1,20 @@
-<div class="header">
-  <a routerLink="/" class="logo" aria-label="Abby Kaemmerer home">
-    <span>A</span>
-    <span class="material-symbols-outlined">bolt</span>
-    <span>K</span>
-  </a>
-  <div class="nav-bar">
-    <div class="main-nav-btns">
-      <div>
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      </div>
-      <div>
-        <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-      </div>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__cluster site-nav__cluster--start">
+      <a
+        routerLink="/"
+        routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a>
+      <a routerLink="/portfolio" routerLinkActive="is-active">Portfolio</a>
     </div>
-    <div>
-      <div>
-        <a routerLink="/contact" routerLinkActive="active">Contact</a>
-      </div>
+    <a routerLink="/" class="logo" aria-label="Abby Kaemmerer home">
+      <span>A</span>
+      <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+      <span>K</span>
+    </a>
+    <div class="site-nav__cluster site-nav__cluster--end">
+      <a routerLink="/contact" routerLinkActive="is-active">Contact</a>
     </div>
-  </div>
-</div>
+  </nav>
+</header>

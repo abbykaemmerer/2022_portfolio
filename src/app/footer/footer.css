@@ -1,27 +1,31 @@
 footer {
-  background-color: #e3e1ce;
+  background-color: var(--olive);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #1d1d1d;
-  padding: 10px;
-  border-top: none !important;
+  gap: 0.65rem 1.25rem;
+  color: var(--cream);
+  padding: 0.4rem var(--page-pad);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
 }
 
 div:first-of-type {
-  margin: 10px;
+  margin: 0;
 }
 
 a,
 a:visited {
-  color: #45431d;
+  color: var(--cream);
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
 }
 
 a:hover {
-  color: #1d1d1d;
-  font-weight: 900;
-  text-decoration: none;
+  border-bottom-color: var(--wine);
 }

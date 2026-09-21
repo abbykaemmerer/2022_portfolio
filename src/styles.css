@@ -1,3 +1,21 @@
+:root {
+  --cream: #f4f1e8;
+  --ink: #22211d;
+  --olive: #747653;
+  --soft-blue: #c9d4d6;
+  --wine: #7b3f49;
+  --color-bg: var(--cream);
+  --color-ink: var(--ink);
+  --color-muted: color-mix(in srgb, var(--ink) 58%, var(--cream));
+  --color-rule: var(--ink);
+  --color-accent: var(--wine);
+  --font-sans: 'Work Sans', sans-serif;
+  --font-serif: 'Fraunces', 'Georgia', serif;
+  --font-mark: 'Lobster', cursive;
+  --page-max: 1320px;
+  --page-pad: clamp(1.25rem, 4vw, 4rem);
+}
+
 *,
 *::before,
 *::after {
@@ -11,9 +29,17 @@ body {
 }
 
 body {
-  background: #f5f5ef;
-  color: #1d1d1d;
-  font-family: 'Work Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .material-symbols-outlined {
@@ -22,4 +48,15 @@ body {
     'wght' 400,
     'GRAD' 0,
     'opsz' 48;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

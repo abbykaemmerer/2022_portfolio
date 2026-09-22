@@ -16,7 +16,7 @@ export class About {
 
   readonly funFacts = [
     'May stop mid-conversation to identify a bug.',
-    'Passionate about sunsets and sour candy',
+    'Passionate about sunsets and sour candy.',
     'Has an unreasonable amount of hometown pride for St. Louis.',
   ];
 }

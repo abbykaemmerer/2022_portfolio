@@ -8,11 +8,12 @@ import { Resume } from './resume/resume';
 export const routes: Routes = [
   { path: '', pathMatch: 'full', component: About },
   { path: 'about', redirectTo: '', pathMatch: 'full' },
+  { path: 'portfolio', pathMatch: 'full', redirectTo: '' },
   {
     path: 'portfolio',
     component: Portfolio,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'professional' },
+      { path: '', pathMatch: 'full', redirectTo: '/' },
       {
         path: 'professional',
         component: ProjectGrid,

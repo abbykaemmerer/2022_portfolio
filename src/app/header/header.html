@@ -6,7 +6,10 @@
         routerLinkActive="is-active"
         [routerLinkActiveOptions]="{ exact: true }"
       >Home</a>
-      <a routerLink="/portfolio" routerLinkActive="is-active">Portfolio</a>
+      <a
+        routerLink="/portfolio/professional"
+        [class.is-active]="portfolioActive()"
+      >Portfolio</a>
     </div>
     <a routerLink="/" class="logo" aria-label="Abby Kaemmerer home">
       <span>A</span>

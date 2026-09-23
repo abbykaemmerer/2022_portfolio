@@ -4,3 +4,16 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Old portfolio index URLs now live on the homepage. Child routes stay in place.
+[[redirects]]
+  from = "/portfolio"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/portfolio/"
+  to = "/"
+  status = 301
+  force = true

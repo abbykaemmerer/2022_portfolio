@@ -38,16 +38,19 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         class="retro-btn retro-btn--nav"
         routerLink="/resume"
         routerLinkActive="is-active"
+        ariaCurrentWhenActive="page"
       >Resume</a>
       <a
         class="retro-btn retro-btn--nav"
         routerLink="/portfolio/professional"
         routerLinkActive="is-active"
+        ariaCurrentWhenActive="page"
       >Professional Work</a>
       <a
         class="retro-btn retro-btn--nav"
         routerLink="/portfolio/personal"
         routerLinkActive="is-active"
+        ariaCurrentWhenActive="page"
       >Personal Projects</a>
     </nav>
   `,

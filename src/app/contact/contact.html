@@ -10,10 +10,11 @@
       class="contact__form"
       action="https://formspree.io/f/xeaogazo"
       method="POST"
-      (input)="onFormInput($event)"
+      aria-labelledby="contact-heading"
+      aria-describedby="contact-intro"
     >
-      <h2 class="contact__intro-title">Who are you?</h2>
-      <p class="contact__intro">Have a project, job, or idea in mind? Send me a note.</p>
+      <h2 id="contact-heading" class="contact__intro-title">Who are you?</h2>
+      <p id="contact-intro" class="contact__intro">Have a project, job, or idea in mind? Send me a note. All fields are required.</p>
 
       <div class="contact__names">
         <div class="contact__field">
@@ -44,7 +45,7 @@
       </div>
 
       <div class="contact__submit">
-        <button type="submit" class="retro-btn retro-btn--block retro-btn--cta" [disabled]="!canSubmit">Send</button>
+        <button type="submit" class="retro-btn retro-btn--block retro-btn--cta">Send</button>
       </div>
     </form>
   </div>

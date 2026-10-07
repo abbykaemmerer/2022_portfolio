@@ -107,7 +107,7 @@
 }
 
 .contact__field input::placeholder {
-  color: color-mix(in srgb, var(--ink) 40%, var(--cream));
+  color: var(--color-muted);
 }
 
 .contact__field input:focus-visible,
@@ -123,17 +123,6 @@
 
 .contact__submit .retro-btn {
   cursor: pointer;
-}
-
-.contact__submit .retro-btn:disabled,
-.contact__submit .retro-btn:disabled:hover,
-.contact__submit .retro-btn:disabled:focus-visible {
-  background: var(--wine);
-  color: var(--cream);
-  border-color: var(--ink);
-  box-shadow: 1px 1px var(--ink);
-  cursor: not-allowed;
-  opacity: 1;
 }
 
 .contact__submit .retro-btn:focus-visible {

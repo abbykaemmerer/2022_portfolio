@@ -1,0 +1,80 @@
+<section
+  #stage
+  class="intro"
+  [class.is-question]="phase() === 'question'"
+  [class.is-leaving]="leaving()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Introduction"
+  (click)="onStageClick($event)"
+>
+  <div class="intro__bar" aria-hidden="true">
+    <span class="intro__bar-fill" [style.width.%]="progress()"></span>
+  </div>
+
+  <div class="intro__chrome">
+    @if (phase() === 'question') {
+      <button type="button" class="intro__text" aria-keyshortcuts="Backspace" (click)="back()">Back</button>
+    } @else {
+      <span></span>
+    }
+    <button type="button" class="intro__text" aria-keyshortcuts="Escape" (click)="skip(); $event.stopPropagation()">Skip</button>
+  </div>
+
+  <p class="sr-only" aria-live="polite">{{ announcement() }}</p>
+
+  <div class="intro__stage">
+    @if (phase() === 'title') {
+      <div class="panel panel--title" [class.is-out]="motion() === 'out'" [attr.data-travel]="travel()">
+        <p class="intro__mark" aria-hidden="true">
+          <span>A</span>
+          <span class="material-symbols-outlined">bolt</span>
+          <span>K</span>
+        </p>
+        <p class="intro__eyebrow">Hello, I’m</p>
+        <h1 class="intro__title" data-focus tabindex="-1">
+          <span>Abby</span>
+          <span>Kaemmerer</span>
+        </h1>
+        <p class="intro__role">
+          Front-end developer,<br>
+          <em>curious person,</em><br>
+          former wildlife biologist.
+        </p>
+        <button type="button" class="intro__begin" (click)="begin(); $event.stopPropagation()">
+          Begin <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    } @else {
+      @for (id of questionKey(); track id) {
+      <div
+        class="panel panel--question"
+        [class.is-out]="motion() === 'out'"
+        [attr.data-travel]="travel()"
+      >
+        <p class="intro__count" aria-hidden="true">{{ stepLabel() }}</p>
+        <h2 class="intro__prompt" id="intro-prompt" data-focus tabindex="-1">{{ question().prompt }}</h2>
+        @if (question().detail) {
+          <p class="intro__detail">{{ question().detail }}</p>
+        }
+        <div class="intro__choices" role="group" aria-labelledby="intro-prompt">
+          @for (choice of question().choices; track choice.id; let i = $index) {
+            <button
+              type="button"
+              class="choice"
+              [class.is-chosen]="selected() === choice.id"
+              [disabled]="!!selected()"
+              [attr.aria-keyshortcuts]="i + 1"
+              (click)="choose(choice)"
+            >
+              <span class="choice__index" aria-hidden="true">0{{ i + 1 }}</span>
+              <span class="choice__label">{{ choice.label }}</span>
+              <span class="choice__arrow" aria-hidden="true">→</span>
+            </button>
+          }
+        </div>
+      </div>
+      }
+    }
+  </div>
+</section>

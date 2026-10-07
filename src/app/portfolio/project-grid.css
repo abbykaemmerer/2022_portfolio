@@ -79,7 +79,7 @@
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--ink) 70%, var(--cream));
+  color: color-mix(in srgb, var(--ink) 78%, var(--cream));
 }
 
 .card__placeholder-label {
@@ -120,6 +120,8 @@
 
 .more a {
   color: var(--wine);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
 }
 

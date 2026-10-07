@@ -5,10 +5,12 @@
         routerLink="/"
         routerLinkActive="is-active"
         [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page"
       >Home</a>
       <a
         routerLink="/portfolio/professional"
         [class.is-active]="portfolioActive()"
+        [attr.aria-current]="portfolioActive() ? 'page' : null"
       >Portfolio</a>
     </div>
     <a routerLink="/" class="logo" aria-label="Abby Kaemmerer home">
@@ -17,7 +19,7 @@
       <span>K</span>
     </a>
     <div class="site-nav__cluster site-nav__cluster--end">
-      <a routerLink="/contact" routerLinkActive="is-active">Contact</a>
+      <a routerLink="/contact" routerLinkActive="is-active" ariaCurrentWhenActive="page">Contact</a>
     </div>
   </nav>
 </header>

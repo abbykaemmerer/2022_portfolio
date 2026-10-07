@@ -81,7 +81,7 @@
   margin: 0.25rem 0 0;
   font-size: 0.78rem;
   font-weight: 400;
-  color: color-mix(in srgb, var(--ink) 48%, #e7e6d3);
+  color: color-mix(in srgb, var(--ink) 70%, #e7e6d3);
 }
 
 .job__body {
@@ -102,7 +102,7 @@
 .job__project {
   font-size: 0.86rem;
   font-weight: 400;
-  color: color-mix(in srgb, var(--ink) 48%, #e7e6d3);
+  color: color-mix(in srgb, var(--ink) 70%, #e7e6d3);
 }
 
 .job__body ul {

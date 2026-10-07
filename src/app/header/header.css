@@ -27,13 +27,16 @@
 }
 
 .site-nav a:not(.logo) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   color: var(--color-ink);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.72rem;
   font-weight: 500;
-  padding-bottom: 0.15rem;
+  padding: 0.35rem 0.15rem 0.3rem;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
